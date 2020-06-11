@@ -27,6 +27,7 @@ This folder contains the visualization of the call graphs computed by `Salsa`.
 
 ## Test Cases
 
+These test cases are from the Java Call Graph Test Suite (JCG).
 ### Ser1
 
 - **Expected Output**: It expects a direct call from `ser.Demo.writeObject` to 
@@ -40,4 +41,17 @@ This folder contains the visualization of the call graphs computed by `Salsa`.
 - **Expected Output**: It expects a direct call from `ser.Demo.writeObject` to 
 `java.io.ObjectOutputStream.defaultWriteObject` at line 15.
 
-- **Actual Output**:![Ser1-JRE1.8.jar.png](https://github.com/SoftwareDesignLab/Salsa/blob/master/callgraphs/Ser2-JRE1.8.jar.png)
+- **Actual Output**:![Ser2-JRE1.8.jar.png](https://github.com/SoftwareDesignLab/Salsa/blob/master/callgraphs/Ser2-JRE1.8.jar.png)
+
+
+
+
+### Ser3
+
+- **Expected Output**: It expects a direct call from `ser.Demo.writeObject` to 
+`java.io.ObjectOutputStream.defaultWriteObject` at line 15.
+
+- **Actual Output**:![Ser3-JRE1.8.jar.png](https://github.com/SoftwareDesignLab/Salsa/blob/master/callgraphs/Ser3-JRE1.8.jar.png)
+
+
+### Ser4
