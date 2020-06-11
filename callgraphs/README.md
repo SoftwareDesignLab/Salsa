@@ -55,3 +55,8 @@ These test cases are from the Java Call Graph Test Suite (JCG).
 
 
 ### Ser4
+
+- **Expected Output**: It expects a direct call from `ser.Demo.readObject` to 
+`java.io.ObjectOutputStream.defaultReadObject` at line 15.
+
+- **Actual Output**:![Ser4-JRE1.8.jar.png](https://github.com/SoftwareDesignLab/Salsa/blob/master/callgraphs/Ser4-JRE1.8.jar.png)
