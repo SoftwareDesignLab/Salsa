@@ -31,4 +31,4 @@ This folder contains the visualization of the call graphs computed by `Salsa`.
 - **Expected Output**: It expects a direct call from `ser.Demo.writeObject` to 
 `java.io.ObjectOutputStream.defaultWriteObject`.
 
-- **Actual Output**:![Ser1-JRE1.8.jar.png](https://raw.githubusercontent.com/SoftwareDesignLab/Salsa/blob/master/callgraphs/Ser1-JRE1.8.jar.png)
+- **Actual Output**:![Ser1-JRE1.8.jar.png](https://raw.githubusercontent.com/SoftwareDesignLab/Salsa/master/callgraphs/Ser1-JRE1.8.jar.png)
