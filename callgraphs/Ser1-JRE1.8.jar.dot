@@ -1,0 +1,22 @@
+digraph G {
+	rankdir=LR;
+	graph[label="Call graph view for Ser1-JRE1.8.jar"];
+	node[style=filled,fillcolor ="white",shape=box,margin=0.02,width=0,height=0];
+	"4_Object.<init>()"[fillcolor=peachpuff,color=salmon2];
+	"5_Demo.main(String[])"[fillcolor=palegreen,color=darkseagreen];
+	"8_Demo.<init>()"[fillcolor=palegreen,color=darkseagreen];
+	"10_FileOutputStream.<init>(String)"[fillcolor=peachpuff,color=salmon2];
+	"12_ObjectOutputStream.<init>(OutputStream)"[fillcolor=peachpuff,color=salmon2];
+	"14_salsa.model.ObjectOutputStream.writeObject(Object)"[shape=underline,fillcolor=white,color=darkslategray];
+	"15_ObjectOutputStream.close()"[fillcolor=peachpuff,color=salmon2];
+	"410_Demo.writeObject(ObjectOutputStream)"[fillcolor=palegreen,color=darkseagreen];
+	"411_ObjectOutputStream.defaultWriteObject()"[fillcolor=peachpuff,color=salmon2];
+	"5_Demo.main(String[])" -> "8_Demo.<init>()";
+	"5_Demo.main(String[])" -> "10_FileOutputStream.<init>(String)";
+	"5_Demo.main(String[])" -> "12_ObjectOutputStream.<init>(OutputStream)";
+	"5_Demo.main(String[])" -> "14_salsa.model.ObjectOutputStream.writeObject(Object)";
+	"5_Demo.main(String[])" -> "15_ObjectOutputStream.close()";
+	"8_Demo.<init>()" -> "4_Object.<init>()";
+	"14_salsa.model.ObjectOutputStream.writeObject(Object)" -> "410_Demo.writeObject(ObjectOutputStream)";
+	"410_Demo.writeObject(ObjectOutputStream)" -> "411_ObjectOutputStream.defaultWriteObject()";
+}
